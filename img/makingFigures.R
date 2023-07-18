@@ -1,0 +1,52 @@
+
+
+# png("gevCurve35.png", width=3710,height=1060,units="px",res=180)
+par(bg = NA, mai = c(0.1,0.1,0.1,0.1), lwd = 2)
+curve(ilaprosUtils::dgev(x,30,6,-0.1), from = 18, to = 80, n = 5000, bty = "n", xaxt = "n", yaxt = "n", xlab = "", ylab = "")
+# png("expCurveRed.png", width=3710,height=1060,units="px",res=180)
+par(bg = NA, mai = c(0.1,0.1,0.1,0.1), lwd = 4, col = "#9B0014")
+curve(dexp(x,0.6), from = 0, to = 9, n = 50000, bty = "n", xaxt = "n", yaxt = "n", xlab = "", ylab = "")
+
+# dev.off()
+
+x <- matrix(c(1,2,3,1,2,3), ncol = 2); z <- matrix(rnorm(6),ncol = 2); image(x[,1],x[,2],z)
+
+rgb(0.65,.85,0.9)
+
+#x <- matrix(c(1,2,3,1,2,3), ncol = 2); z <- matrix(rnorm(6),ncol = 2); 
+#image(x[,1],x[,2],z, col = hcl.colors(400, palette = "viridis", alpha = 0.6), xaxt = "n", yaxt = "n")
+
+xl <- 28; yl <- 9
+xdirection <- seq(0,1,length.out =  xl); ydirection <- seq(0,1,length.out =  yl)
+set.seed(1242)
+x <- matrix(rep(seq(1,xl),yl), ncol = yl); z <- matrix(rnorm(xl*yl, -2*sin(4*pi*xdirection)),ncol = yl); 
+z[,yl][z[,yl] > 0]  <- runif(length(z[,yl][z[,yl] > 0]),1,1.4)
+
+# png("heroR.png", width=1920,height=540,units="px",res=180)
+
+par( mai = c(0,0,0,0), col = NA)
+image(xdirection , ydirection ,z, 
+       col = hcl.colors(400, palette = "Viridis", alpha = 0.4), xaxt = "n", yaxt = "n")
+#text(x = .5, y = .5, col = "darkblue", ".5.5")
+text(x = .1, y = .1, col = "darkblue", ".1.1")
+#text(x = .3, y = .3, col = "darkblue", ".3.3")
+#text(x = .1, y = .8, col = "darkblue", ".1.8")
+#text(x = .5, y = .8, col = "darkblue", ".5.8")
+text(x = .8, y = .8, col = "darkblue", ".8.8")
+text(x = .9, y = .9, col = "darkblue", ".9.9")
+#text(x = .05, y = .45, col = "darkblue", 
+#     latex2exp::TeX("$\\tilde{f}(y) = \\sum_{j=1}^{\\infty}\\pi_j \\phi(y; \\tilde{\\mu}_j, \\sigma^2)$"))
+#text(x = .75, y = .95, col = "darkblue", 
+#     latex2exp::TeX("H(y) = $1 - \\left(1+ \\xi \\frac{y}{\\sigma}\\right)^{-1/\\xi}$"))
+# latex2exp::TeX("$y|\\mu, \\sigma, \\xi \\sim GEV(\\mu, \\sigma, \\xi)$"))
+
+dev.off()
+
+
+
+# install.packages("extrafont")
+# library(extrafont)
+
+# par(family = "LM Roman 10")
+
+
