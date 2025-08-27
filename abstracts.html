@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>RISE final workshop - abstracts</h1>
+   <section id="amslot" class="section">
+   <div class="container">
+        <div class="section-header">          
+          <h2 class="section-<strong>Title</strong>:">Morning</h2>
+          <hr class="lines">
+        </div>
+	<div>
+	<h3 id="section1"> Session 1 </h3>
+	<p> 
+	<strong>Speaker</strong>: Paolo Onorati (University of Padova) <br>
+	<strong>Title</strong>: TBD <br>
+	<strong>Abstract</strong>: TBD  	
+	<br>
+    <p>
+	<strong>Speaker</strong>: Dáire Heay (Ca’ Foscari University of Venice) <br>
+	<strong>Title</strong>: Some advances in modelling extreme rainfall <br>
+	<strong>Abstract</strong>:<br>
+	One of the key contributions of the RISE projects has been in the characterisation of the spatio-temporal behaviour rainfall extremes. This talk will provide an overview of these contributions. We present models which allow us to explore the seasonal pattern of both the marginal distribution and the spatial dependence of rainfall in the Piave basin in Northern Italy. We extend the recently proposed max-id models and find evidence of seasonal variation of extremal dependence. Furthermore, we present a model which allows us to capture the temporal evolution of rainfall extreme events. We explore how these models can reproduce summer intense storm events in selected rain gauges. 
+	Joint work with Isadora Antoniano-Villalobos and Ilaria Prosdocimi (Ca’ Foscari University of Venice).
+    <p>
+	
+    <h3 id="section2"> Session 2 </h3>
+	    <p>
+		<strong>Speaker</strong>: Francesco Marra (University of Padova) <br>
+		<strong>Title</strong>: A physics-informed perspective on the statistics of extreme precipitation <br>
+		<strong>Abstract</strong>:<br>
+		Using a conceptual model of the atmospheric column and some simple assumptions, it can be shown that the distribution of precipitation amounts over appropriate time intervals has stretched exponential (i.e., Weibull) tails. I will use these physical arguments to derive a simple non-asymptotic approach to model the statistics of extreme precipitation on temporal scales from a few minutes to 24 hours. I will discuss the slow convergence of Weibull tails, highlighting some potential pitfalls in the use of the extreme value theorem on this type of variable. I will then show some applications of this approach and discuss its main advantages and disadvantages.
+		<p>
+		
+		<strong>Speaker</strong>: Miguel de Carvalho (University of Edinburgh) <br>
+		<strong>Title</strong>: A Neural Model for Cascading Extremes <br>
+		<strong>Abstract</strong>: <br>
+		In this talk, I will address the growing concern of cascading extreme events, such as an extreme earthquake followed by a tsunami, by presenting a novel method for risk assessment focused on these domino effects. The proposed approach develops an extreme value theory framework within a Kolmogorov–Arnold network (KAN) to estimate the probability of one extreme event triggering another, conditionally on a feature vector. An extra layer is added to the KAN’s architecture to enforce the definition of the parameter of interest within the unit interval, and we refer to the resulting neural model as KANE (KAN with Natural Enforcement). The proposed method is backed by exhaustive numerical studies and further illustrated with real-world applications to seismology and climatology.
+		<p>
+		
+		<strong>Speaker</strong>: Nathan Huet (Ca’ Foscari University of Venice)<br>
+		<strong>Title</strong>: Robust estimation for the generalized extreme-value distribution <br>
+		<strong>Abstract</strong>: <br>
+		A common approach for modeling extremes, such as peak flow or high temperatures, is the three-parameter generalized extreme value distribution. However, since only extreme observations, here defined as maxima over disjoint blocks, are used to estimate the parameters, the effective sample size is often limited. Consequently, the Maximum Likelihood Estimator (MLE) can suffer from high variance and is highly sensitive to outliers. To address these limitations, we propose a novel robust estimator based on the minimization of the density power divergence, controlled by a tuning parameter α that balances robustness and efficiency. When α = 0, our estimator coincides with the MLE; when α = 1, it corresponds to the L2 estimator, known for its robustness. We establish convenient theoretical properties of the proposed estimator, including the boundedness of its influence function for α > 0 and its asymptotic normality. Finally, we demonstrate the practical effectiveness of our method through empirical comparisons with the MLE and another robust estimator, the Multi-Quantile Estimator, on both simulated and real-world datasets. 
+		Joint work with Ilaria Prosdocimi (Ca’ Foscari University of Venice)
+		<p>
+    </section>
+	<section id="pmslot" class="section">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-<strong>Title</strong>:">Afternoon</h2>
+          <hr class="lines">
+        </div>
+	<div>
+   <h3 id="section3"> Session 3 </h3>
+	    <p>
+		
+		
+<strong>Speaker</strong>: Viviana Carcaiso (INRAE) <br>
+<strong>Title</strong>: Bayesian Mixture Models for Heterogeneous Extremes<br>
+<strong>Abstract</strong>:<br>
+In practical scenarios, observed maximum values often deviate from a single parametric distribution. The conventional use of the Generalized Extreme Value (GEV) distribution to model block maxima may be inappropriate when extremes are actually structured into multiple heterogeneous groups. This can result in inaccurate risk estimation of extreme events based on return levels. In this work, we propose a novel approach for describing the behavior of extreme values in the presence of such heterogeneity.  Mixture models provide a valuable approach to capture heterogeneity in data distributions. To handle the uncertainty regarding the number of underlying components, an infinite mixture model of GEV distributions is employed. The use of an infinite number of components enables the characterization of every possible block behavior, while at the same time defining similarities between observations based on their extreme behavior. By employing a Dirichlet process prior on the mixing measure, we can capture the complex structure of the data without pre-specifying the number of mixture components. The combination of Bayesian nonparametric techniques and models from block maxima analysis allows to detect the presence of multiple groups in the data, which would not be accounted for using the traditional single GEV model. The proposed model is employed on both simulated and real-world data. 
+Joint work with Miguel de Carvalho (University of Edinburgh) and Isadora Antoniano-Villalobos and Ilaria Prosdocimi (Ca’ Foscari University of Venice) <p>
+
+<strong>Speaker</strong>: Lorenzo Dell'Oro (University of Padova)<br>
+<strong>Title</strong>: Extended extreme-value models with spatial dependence<br>
+<strong>Abstract</strong>:<br>
+The spatial modeling of extreme values allows studying the risk of joint occurrence of extreme events at different locations and is of significant interest in climatic and other environmental sciences. A popular class of models, due to its flexibility and its importance for asymptotic representations, is that of random location-scale mixtures, in which a spatial “baseline” process is multiplied or shifted by a random variable, potentially altering its extremal dependence behavior. Gaussian location-scale mixtures retain benefits of their Gaussian baseline processes while overcoming some of their limitations, such as symmetry, light tails and weak tail dependence. We review properties of Gaussian location-scale mixtures and develop several novel constructions with interesting features. We leverage their flexibility to propose extended extreme-value models, that allow for appropriately modeling not only the tails but also the bulk of the data. This avoids the uncertainty brought by the need to select an artificial threshold to define extreme values and separate the bulk from the tail. We also propose new solutions for likelihood inference in parametric models of Gaussian location-scale mixtures, in order to avoid the numerical bottleneck given by the latent location and scale variables that lead to high computational cost of standard likelihood evaluations. The effectiveness of the models and of the inference methods is confirmed with simulated data examples, and we present an application to wildfire-related weather variables.
+Joint work with Carlo Gaetan (Ca’ Foscari University of Venice) and Thomas Opitz (INRAE) 
+<p>
+
+<strong>Speaker</strong>: Stefano Rizzelli (University of Padova) <br>
+<strong>Title</strong>: Bayesian prediction of peaks over a threshold <br>
+<strong>Abstract</strong>: <br>
+In many applied fields, the prediction of more severe events than those already recorded is crucial for safeguarding against potential future calamities. What-if analyses, which evaluate hypothetical scenarios, play a key role in assessing the potential impacts of extreme events and in guiding the development of effective safety policies. These problems can be tackled using extreme value theory. We employ the well-established peaks-over-threshold method and describe a comprehensive Bayesian toolkit to address forecasting needs. We examine an out-of-sample variable and focus on its conditional distribution, given that it exceeds a high threshold. Specifically, we give conditions under which the generalized Pareto approximation of the corresponding conditional density is accurate and describe a Bayesian approach for its estimation via the posterior predictive density, enabling the derivation of predictive intervals. By leveraging threshold stability, we illustrate how predictions can be reliably extrapolated deep into the tail of the unknown data-generating distribution. We establish asymptotic accuracy of the proposed estimator and predictive intervals, as well as that of estimators of notable risk measures based on point forecasts. Finally, we extend the prediction framework to the case of independent data with covariates within a proportional tail model, and to the case of linear time series.
+<p>
+
+    <h3 id="section4"> Session 4 </h3>
+	    <p>
+<strong>Speaker</strong>: Carlo Gaetan (Ca’ Foscari University of Venice)<br>
+<strong>Title</strong>: Multivariate distributional modeling of low, moderate, and large intensities without threshold selection steps <br>
+<strong>Abstract</strong>: <br>
+In this talk I will present a proposal of extension of Extended Generalized Pareto Distribution (EGPD) to the multivariate case in compliance with the multivariate EVT for high and low extremes. This extension relies to hierarchical representation that smoothly combines the multivariate bulk distribution with the modelling of the upper and lower parts. The methodology is demonstrated through an analysis of river discharge recordings taken at three locations within the same river network in Great Britain.<br>
+Joint work with Philippe Naveau, Laboratoire des Sciences du Climat et l’Environnement CNRS.
+<p>
+
+<strong>Speaker</strong>: Stuart Coles <br>
+<strong>Title</strong>: A brief history of ISMEV 1 and 2<br>
+<strong>Abstract</strong>: <br>
+The first edition of ‘An Introduction to the Statistical Modelling of Extreme Values’ was published almost 35 years ago. It still serves a purpose as an introductory text for anyone starting their journey in the study of extreme values, but obviously fails to take account of the explosion in extreme value research since its publication. A new edition of the book, currently being written in collaboration with Miguel de Carvalho and Anthony Davison, seeks to plug those gaps. It will have a fresher look, using contemporary LaTeX and R presentation tools, and also eliminate some of the embarrassing errors in the original edition. (While hopefully not introducing too many new ones). It aims, though, to maintain the ethos of the original version by requiring only basic statistical knowledge as a prerequisite
+This talk comprises a brief history of the writing of both editions of the book, and gives a more detailed description of the ways in which we hope that the new edition will improve on the original.
+<p>
+
+    </section>
+	
+    <section id="posters" class="section">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-<strong>Title</strong>:">Posters</h2>
+          <hr class="lines">
+        </div>
+	<div>
+	
+	<p> 
+
+<strong>Presenter</strong>: Eleonora Dallan (University of Padova) <br>
+<strong>Title</strong>: Heavy storms characteristics and extreme precipitation statistics <br>
+Joint work with Francesco Marra, Hayley Fowler, Marco Borga	<br>
+<p> 
+
+<strong>Presenter</strong>: Matteo Darienzo (University of Padova)<br>
+<strong>Title</strong>: Bayesian estimation of extreme sub-hourly precipitation with increasing temperature<br>
+<strong>Abstract</strong>:<br>
+Extreme sub-hourly precipitation can lead to flash floods and other natural disasters. Improving the estimation of the exceedance probability of these events is particularly important in a changing climate. A recent study has proposed a non-asymptotic and non-stationary statistical method (TENAX), with a physically based dependence from the temperature as covariate. This method includes all ordinary rainfall events, not only a small sample of the extremes and establishes dependence between the two parameters of the Weibull distribution with the near-surface air temperature. In their work, the parameters' estimation was performed with the maximum likelihood method and the uncertainty was quantified with a bootstrap approach. Here, to provide results with quantitative uncertainty combining information brought from the observations with information given by prior knowledge on the parameters, TENAX is implemented within a Bayesian framework. Preliminary results on several stations in Switzerland show consistency of the past and future return levels with the previous TENAX, and with the SMEV (both classical and time-dependent versions). Perspectives of this work include testing different MCMC algorithms and mixture models implementation. <br>
+Joint work with Francesco Marra
+<p>
+
+<strong>Presenter</strong>: Kajal Dodhia (STOR-i, Lancaster University) <br>
+<strong>Title</strong>: Statistical Modelling of Sea Surface Temperatures and Marine Heatwaves <br>
+<strong>Abstract</strong>: <br>
+Sea Surface Temperatures (SSTs) around the UK have increased on average 0.3°C per decade over the last 40 years. EDF’s priority is safety, hence their Nuclear Power Plants (NPP) should be resilient to natural hazards such as Marine Heatwaves. Sea water is used as a coolant for NPPs. Therefore, a rise in SST compromises safety and can lead to reduced efficiency of NPP cooling systems, equipment failures or temporary shutdowns and impact marine ecosystems. Some challenges faced with in-situ SST data are the strong seasonal behaviour combined with inter-year variability and the dependence between extreme temperatures (high/low SSTs). To address these issues, we compare several methods which preprocess the data by modelling the seasonality before examining the extremes. We find that a non-parametric approach generally overestimates the magnitudes of the extremes whereas, a parametric approach tends to underestimate them. Regardless of the preprocessing method, the distribution of the extremes is still bimodal with seasonal modes. Therefore, our objectives are to establish a robust method for identifying the extreme values and a definition for Marine Heatwaves by determining whether they should be defined as an absolute extreme or relative extremes based on the time of year. We hope to improve our understanding of changes in high/low SSTs, in coastal regions around the UK. <br>
+Joint work with Emma Eastoe, Carolina Euan, Dafni Sifnioti, Jack Bauchop
+<p>
+
+<strong>Presenter</strong>: Michele Lambardi di San Miniato	(University of Udine) <br>
+<strong>Title</strong>: Calibrated prediction of extremes with an application to sports records <br>
+<strong>Abstract</strong>: <br>
+Establishing a new world record in athletics can be viewed as an extreme event, occurring in the tails of the distribution of peak performances. It is thus natural to analyze sports records using models and methods from extreme value theory. The choice of the model is more or less natural, but we argue that the most popular approach to using models for prediction can be misleading: one is tempted to just replace the unknown parameter with an estimate (this is called the "estimative" approach), but the asymptotic theory shows that this is only a rough approximation to the true data generating process, especially when estimates are based on small datasets. When small sample issues are suspected, asymptotic corrections come to the rescue, but it can be rather tedious to apply them in practice. Fonseca, Giummole' and Vidoni (2014, 2025) recently provided two automatic corrections to improve the quality of probabilistic predictions based on bootstrap, to improve the reliability of either predicted probabilities or predicted quantiles.An analysis of world and annual records in athletics and aquatics illustrates the differences in the predictions of new world records obtained using either the classical approach or the bootstrap methods. Discrepancies in predictions can indicate small sample issues, which the improved methods aim to address, making them preferable to the potentially unreliable estimative approach. Yet distinct, the distributions for improved probabilities ad improved quantiles yield predictions that somewhat agree with each other in one respect: predictions should be more heavy-tailed than usually told by the estimative approach. As a side effect, while all records look hard to break under the estimative approach, the improved methods tell us of a near future richer in new records. More generally, the analysis of extreme values can hugely benefit from calibration methods, when the validity of predictions is at stake. <br>
+
+Joint work with Giovanni Fonseca, Federica Giummole' and Valentina Mameli 
+ <br>
+References <br>
+- Fonseca, G., Giummole', F. and Vidoni, P. (2014). ""Calibrating predictive distributions"". Journal of Statistical Computation and Simulation 84(2), 373-383 (2014). DOI:10.1080/00949655.2012.709518 <br>
+- Fonseca, G., Giummole', F. and Vidoni, P. (2025). ""Optimal prediction for quantiles and probabilities"". Statistical Papers 66, 24 (2025). DOI:10.1007/s00362-024-01641-2
+<p>
+
+<strong>Presenter</strong>: Fernando Mayer (Maynooth University) <br>
+<strong>Title</strong>: A Bayesian hierarchical spatio-temporal model with physical barriers to model extreme sea-level data using the blended GEV distribution <br>
+<strong>Abstract</strong>: <br> 
+Modelling extreme events is a fundamental challenge in many scientific fields, particularly in environmental and climate sciences, where rare but impactful occurrences must be accurately predicted. Traditional extreme value models often focus solely on asymptotic properties of maxima, limiting their applicability in complex datasets where both central and extreme values contain valuable information. This study introduces a Bayesian hierarchical spatio-temporal model based on the blended Generalized Extreme Value (bGEV) distribution, which provides a stochastic process-based approach to modelling extreme observations. Unlike the standard Generalized Extreme Value (GEV) distribution, the bGEV formulation ensures a smooth transition between the bulk and tail of the data, offering greater flexibility and stability in a latent process setting. A key aspect of our approach is the representation of spatial dependence using the Stochastic Partial Differential Equation (SPDE) framework, which efficiently approximates Gaussian Markov random fields (GMRFs) through a finite element representation. The spatial dependence is modelled via a Matern covariance function, explicitly incorporating the range parameter to better control the spatial correlation structure. To account for physical constraints in spatial dependence, we employ a barrier model, which prevents unrealistic correlations across land-sea boundaries, an issue often overlooked in classical spatial models. Temporal dependence is introduced via a latent autoregressive (AR1) stochastic process, capturing serial correlation and trends in extreme values over time. The AR1 structure provides a Markovian formulation of temporal dependence, estimated jointly with spatial effects in a Bayesian hierarchical framework. Using Integrated Nested Laplace Approximation (INLA), we efficiently estimate latent Gaussian processes, ensuring computational scalability without the need for high-dimensional sampling. To assess the model’s performance, we apply it to an extreme sea-level dataset from the Global Extreme Sea Level Analysis (GESLA) database, including tide-gauge records from Ireland and the West coast of Great Britain. We evaluate different spatial, temporal, and stochastic process components using Deviance Information Criterion (DIC), Watanabe-Akaike Information Criterion (WAIC), and Conditional Predictive Ordinates (CPO), focusing on predictive performance. The results demonstrate that models incorporating spatial structure and temporal trends offer superior predictive capability, with barrier-aware models significantly improving inference. Our findings highlight the benefits of bGEV-based stochastic process models in extreme value analysis, particularly in spatio-temporal settings where physical constraints and latent dependencies are crucial. More broadly, this framework provides a computationally efficient Bayesian approach to extreme value modelling, applicable to hydrology, climate science, epidemiology, and other domains where structured stochastic processes are essential. By integrating hierarchical Bayesian inference with stochastic process theory, we bridge the gap between classical extreme value analysis and modern spatio-temporal modelling, offering a robust tool for predictive inference under uncertainty. <br>
+Joint work with Niamh Cahill	
+<p>
+
+<strong>Presenter</strong>: Niloofar Mehrnia (KTH Royal Institute of Technology) <br>
+<strong>Title</strong>: Channel Prediction Using Deep Recurrent Neural Network with EVT-based Adaptive Quantile Loss Function <br>
+<strong>Abstract</strong>: <br>
+Ultra-reliable low latency communication (URLLC) systems are pivotal for applications demanding high reliability and low latency, such as autonomous vehicles. In such contexts, wireless channel prediction becomes essential to maintaining communication quality, as it allows the system to anticipate and mitigate the effects of fast-fading channels, thereby reducing the risk of packet loss and latency spikes. We present a novel framework that integrates neural networks with extreme value theory (EVT) to enhance channel prediction, focusing on predicting extreme channel events that challenge URLLC performance. We propose an EVT-based adaptive quantile loss function that integrates EVT into the loss function of the deep recurrent neural networks (DRNNs) with gated recurrent units (GRUs) to predict extreme channel conditions efficiently. The numerical results indicate that the proposed GRU model, utilizing the EVT-based adaptive quantile loss function, significantly outperforms the traditional GRU. It predicts a tail portion of 7.26%, which closely aligns with the empirical 7.49%, while the traditional GRU model only predicts 2.4%. This demonstrates the superior capability of the proposed model in capturing tail values that are critical for URLLC systems. <br>
+Joint work with Parmida Valiahdi, Sinem Coleri, James Gross
+<p>
+
+
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lnr lnr-arrow-up"></i>
+    </a>
+    
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>     
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mixitup.js"></script>
+    <script src="js/nivo-lightbox.js"></script>
+    <script src="js/owl.carousel.js"></script>    
+    <script src="js/jquery.stellar.min.js"></script>    
+    <script src="js/jquery.nav.js"></script>    
+    <script src="js/scrolling-nav.js"></script>    
+    <script src="js/jquery.easing.min.js"></script>    
+    <script src="js/smoothscroll.js"></script>    
+    <script src="js/jquery.slicknav.js"></script>     
+    <script src="js/wow.js"></script>   
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>    
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <script src="js/waypoints.min.js"></script>    
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>   
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
